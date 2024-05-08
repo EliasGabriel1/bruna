@@ -170,49 +170,51 @@
       </div>
     </header>
 
-    <main>
-      <section id="carrossel-brands" class="carrossel-brands bloco2">
-        <div class="container">
-          <swiper-container
-            class="mySwiper"
-            autoplay-delay="1500"
-            autoplay-disable-on-interaction="false"
-            slides-per-view="5.5"
-            space-between="30"
-            centered-slides="true"
-            loop="true"
-          >
-            <swiper-slide>
-              <img src="https://placehold.co/190x45" alt="" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://placehold.co/190x45" alt="" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://placehold.co/190x45" alt="" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://placehold.co/190x45" alt="" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://placehold.co/190x45" alt="" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://placehold.co/190x45" alt="" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://placehold.co/190x45" alt="" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://placehold.co/190x45" alt="" />
-            </swiper-slide>
-            <swiper-slide>
-              <img src="https://placehold.co/190x45" alt="" />
-            </swiper-slide>
-          </swiper-container>
-        </div>
-      </section>
+    <section id="carrossel-brands" class="carrossel-brands bloco2">
+      <div class="container">
+        <swiper-container
+          class="mySwiper"
+          id="carrossel-brands-swiper"
+          autoplay-delay="1500"
+          autoplay-disable-on-interaction="false"
+          slides-per-view="5.5"
+          slides-per-view-phone="3"
+          space-between="30"
+          centered-slides="true"
+          loop="true"
+        >
+          <swiper-slide>
+            <img src="https://placehold.co/190x45" alt="" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="https://placehold.co/190x45" alt="" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="https://placehold.co/190x45" alt="" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="https://placehold.co/190x45" alt="" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="https://placehold.co/190x45" alt="" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="https://placehold.co/190x45" alt="" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="https://placehold.co/190x45" alt="" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="https://placehold.co/190x45" alt="" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="https://placehold.co/190x45" alt="" />
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
 
+    <main>
       <section id="about-agency" class="about-agency bloco3">
         <div class="container">
           <div class="container-content content-about-agency bloco3">
@@ -479,5 +481,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./content/js/menu.js"></script>
     <script src="./content/js/index.js"></script>
+
+    <script>
+      // Verifica se o dispositivo é um mobile
+      function isMobileDevice() {
+        return (
+          typeof window.orientation !== "undefined" ||
+          navigator.userAgent.indexOf("IEMobile") !== -1
+        );
+      }
+
+      // Ajusta o número de slides por vista se for um dispositivo móvel
+      function adjustSlidesPerView() {
+        var swiper = document.querySelector(".mySwiper");
+        if (isMobileDevice()) {
+          swiper.setAttribute("slides-per-view", "2.5");
+        }
+      }
+
+      // Chama a função para ajustar os slides por vista ao carregar a página
+      adjustSlidesPerView();
+    </script>
   </body>
 </html>
