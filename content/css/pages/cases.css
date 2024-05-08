@@ -1,0 +1,56 @@
+.grid-cases{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.grid-cases__container {
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "a e d"
+    "f e i"
+    "g h i";
+}
+
+.grid-cases__container .grid-cases__card{
+  margin: 10px;
+  display: grid;
+}
+
+.grid-cases__container .grid-cases__card:nth-child(1n) {
+  grid-area: a;
+}
+
+.grid-cases__container .grid-cases__card:nth-child(2n) {
+  grid-area: b;
+}
+
+.grid-cases__container .grid-cases__card:nth-child(3n) {
+  grid-area: c;
+}
+
+.grid-cases__container .grid-cases__card:nth-child(4n) {
+  grid-area: d;
+}
+
+.grid-cases__container .grid-cases__card:nth-child(5n) {
+  grid-area: e;
+}
+
+.grid-cases__container .grid-cases__card:nth-child(6n) {
+  grid-area: f;
+}
+
+.grid-cases__container .grid-cases__card:nth-child(7n) {
+  grid-area: g;
+}
+
+.grid-cases__container .grid-cases__card:nth-child(8n) {
+  grid-area: h;
+}
+
+.grid-cases__container .grid-cases__card:nth-child(9n) {
+  grid-area: i;
+}

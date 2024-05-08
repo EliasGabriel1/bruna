@@ -1,0 +1,246 @@
+/* --------------------------------------------------- BODY -------------------------------------------------- */
+
+body{
+    background-color: var(--aux-color);
+}
+
+/* --------------------------------------------------- END BODY -------------------------------------------------- */
+
+
+/* --------------------------------------------------- BRAND -------------------------------------------------- */
+
+.carrossel-brands{
+    margin-top: 50px;
+}
+
+/* --------------------------------------------------- END BRAND -------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------------- HEADER -------------------------------------------------- */
+
+header{
+    background-color: var(--main-color);
+}
+
+.group_box_content_text-header h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--tom-black-1);
+    mix-blend-mode: normal;
+}
+
+.group_box_content_text-header h5{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+}
+
+a.buttom-header{
+    border-radius: 55px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--tom-white-1);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.image-bloco1{
+    width: 100%;
+}
+
+/* --------------------------------------------------- about-agency -------------------------------------------------- */
+
+.about-agency{
+    margin-bottom: 229px;
+    margin-top: 200px;
+}
+
+.content-about-agency{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.content-about-agency figure>img{
+    max-height: 290px;
+}
+
+.group_box_content_text-about-agency{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 29px;
+    width:100%;
+    margin-left: 50px;
+}
+
+/* .image-about-agency{
+    width: 35%;
+} */
+
+.group_box_content-about-agency{
+    width: 63%;
+    max-width: 50vw;
+}
+
+.group_box_content_text-about-agency h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+}
+
+.group_box_content_text-about-agency h5{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .content-about-agency{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+
+    .group_box_content_text-about-agency{
+        max-width: unset;
+    }
+}
+
+/* --------------------------------------------------- bloco4 -------------------------------------------------- */
+
+
+.bloco4{
+    margin-bottom: 229px;
+}
+
+.content-bloco4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-bloco4 .bloco4__swiper{
+    max-width: 70%;
+    width: 70%;
+}
+
+.group_box_content_text-bloco4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 29px;
+    max-width: 481px;
+    width:100%;
+    margin-bottom: 36px;
+}
+
+.group_box_content_text-bloco4 h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+}
+
+.group_box_content_text-bloco4 h5{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 1000px){
+    .content-bloco4{
+        flex-direction: column;
+    }
+}
+
+
+/* --------------------------------------------------- bloco5-------------------------------------------------- */
+
+.bloco5{
+    margin-bottom: 100px;
+}
+
+.content-bloco5{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-text-bloco5{
+    color: var(--tom-fonte-corrida);
+}
+
+.content-text-bloco5 ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-text-bloco5 ul li{
+    font-size: 35px;
+}
+
+.content-text-bloco5 ul li span{
+    color: var(--second-color);
+    font-weight: 600;
+}
+
+.content-text-bloco5 ul li .button-bloco5{
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 900px){
+    .group_box_content_text-header h1{
+        width: 427px;
+    }
+
+    .group_box_content_text-header h5{
+        width:445px;
+    }
+
+    .content-header figure img{
+        max-width: 693px;
+        max-height: 598px;
+    }
+
+    .group__box_content-check-out{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns:repeat(auto-fill, 385px);
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .box_content-our_services{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .group__box_content-check-out{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
