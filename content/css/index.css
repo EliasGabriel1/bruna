@@ -4,6 +4,10 @@ body {
   background-color: var(--aux-color);
 }
 
+header {
+  background-color: transparent !important;
+}
+
 /* --------------------------------------------------- END BODY -------------------------------------------------- */
 
 /* --------------------------------------------------- BRAND -------------------------------------------------- */
@@ -11,6 +15,25 @@ body {
 .carrossel-brands {
   margin-top: 50px;
 }
+
+#carrossel-brands-swiper img {
+  display: flex;
+  min-height: 100px;
+  width: 100%;
+  max-height: 100%;
+  object-fit: unset !important;
+}
+
+/* .carrossel-brands #carrossel-brands-swiper::after{
+  position: relative;
+  content: "";
+  height: 100px;
+  display: block;
+  background: rgb(19,19,19);
+  background: linear-gradient(90deg, rgba(19,19,19,1) 0%, transparent 15%, transparent 85%, rgba(19,19,19,1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
 
 @media only screen and (max-width: 1000px) {
   .carrossel-brands .container {
@@ -72,7 +95,7 @@ a.buttom-header {
 
 .content-about-agency {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   margin-top: 200px;
 }
@@ -80,10 +103,6 @@ a.buttom-header {
 .content-about-agency figure > img {
   max-height: 290px;
 }
-
-/* .image-about-agency{
-    width: 35%;
-} */
 
 .group_box_content-about-agency {
   width: 63%;
@@ -93,14 +112,17 @@ a.buttom-header {
 .group_box_content_text-about-agency h2 {
   font-weight: bold;
   font-size: 36px;
-  line-height: 56px;
+  line-height: 43px;
+  max-width: 550px;
 }
 
 .group_box_content_text-about-agency h5 {
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
+  max-width: 850px;
+  /* text-align: justify; */
 }
 
 @media only screen and (min-width: 1000px) {
@@ -110,7 +132,7 @@ a.buttom-header {
     justify-content: space-between;
     gap: 29px;
     width: 100%;
-    margin-left: 50px;
+    margin-left: 99px;
   }
 }
 
@@ -135,36 +157,36 @@ a.buttom-header {
 
 .content-bloco4 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .content-bloco4 .bloco4__swiper {
   max-width: 70%;
-  width: 70%;
+  width: fit-content;
 }
 
 .group_box_content_text-bloco4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 29px;
   max-width: 481px;
   width: 100%;
-  margin-bottom: 36px;
+  margin-bottom: 25px;
 }
 
 .group_box_content_text-bloco4 h2 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 56px;
 }
 
-.group_box_content_text-bloco4 h5 {
+.group_box_content_text-bloco4 ul > li {
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 37px;
+  color: var(--tom-fonte-corrida);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -184,6 +206,10 @@ a.buttom-header {
   justify-content: space-between;
 }
 
+.content-bloco5 img {
+  max-width: 200px;
+}
+
 .content-text-bloco5 {
   color: var(--tom-fonte-corrida);
 }
@@ -195,11 +221,12 @@ a.buttom-header {
 
 .content-text-bloco5 ul li {
   font-size: 35px;
+  line-height: 50px;
 }
 
 .content-text-bloco5 ul li span {
   color: var(--second-color);
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .content-text-bloco5 ul li .button-bloco5 {
@@ -208,6 +235,8 @@ a.buttom-header {
   cursor: pointer;
   padding: 10px 25px;
   margin-top: 20px;
+  width: 100%;
+  max-width: 340px;
 }
 
 @media only screen and (min-width: 900px) {

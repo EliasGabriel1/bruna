@@ -9,6 +9,10 @@ footer > svg {
   align-self: flex-end;
 }
 
+footer .logo{
+  max-width: 200px;
+}
+
 footer .content-footer {
   display: flex;
   justify-content: space-between;

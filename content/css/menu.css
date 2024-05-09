@@ -165,25 +165,30 @@ nav .nav ul li a {
   color: var(--tom-fonte-menu);
   font-size: 18px;
   line-height: 23px;
+  letter-spacing: 3px;
 }
 
 nav .nav ul li a:hover {
-  color: var(--tom-fonte-menu);
-  font-weight: 600;
+  color: var(--second-color);
 }
 
 .button-navbar {
-  border-radius: 20px;
+  border-radius: 50px;
   font-size: 18px;
   cursor: pointer;
   padding: 10px 25px;
+  font-family: var(--font-familly);
+  font-size: medium;
 }
 
-header ul{
-    display: flex;
-    gap: 21px;
+header ul {
+  display: flex;
+  gap: 21px;
 }
 
+header .logo{
+  max-width: 145px;
+}
 
 @media only screen and (min-width: 900px) {
   body > header > nav.desk {
